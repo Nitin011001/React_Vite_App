@@ -33,11 +33,14 @@ const Hero = () => (
         fees
       </p>
     </div>
-    <div>
+    <div className={`flex-1 flex${styles.flexCenter}`}>
         <img src={robot} alt="billings" className='w-[100%] h-[100%] relative z-[5]' />
-        <div className='avsolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
-        <div className='avsolute z-[0] w-[80%] h-[80%] top-0 pink__gradient' />
-        <div className='avsolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
+        <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
+        <div className='absolute z-[1] w-[80%] h-[80%] white__gradient bottom-40 rounded-full' />
+        <div className='absolute z-[0] w-[50%] h-[50%] bottom-20 blue__gradient' />
+    </div>
+    <div className={`ss:hidden ${styles.flexCenter}`}>
+
     </div>
   </section>
 );
