@@ -1,5 +1,5 @@
 import React from "react";
-const FeedbackCard=()=>{
+const FeedbackCard=({content,name,title,img})=>{
     return (
         <div>Billing</div>
     )
